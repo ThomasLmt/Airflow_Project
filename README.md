@@ -1,5 +1,5 @@
-**Airflow Weather Data Pipeline
-**********
+**Airflow Weather Data Pipeline******
+
 Overview
 This Airflow project constructs a Directed Acyclic Graph (DAG) designed to fetch weather information from an online weather data API. The data is then stored, transformed, and used to train a prediction algorithm. This data feeds into a dashboard hosted in a dedicated docker-compose.yml file accessible on port 8050.
 
