@@ -12,9 +12,6 @@ from sklearn.tree import DecisionTreeRegressor
 from sklearn.ensemble import RandomForestRegressor
 from joblib import dump
 
-# OpenWeatherMap API key and link
-API_KEY = "72b3a96a804778439aee6e16556e5472"
-URL_TEMPLATE = "https://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}"
 
 def fetch_weather_data():
     cities = ['paris', 'london', 'washington']
