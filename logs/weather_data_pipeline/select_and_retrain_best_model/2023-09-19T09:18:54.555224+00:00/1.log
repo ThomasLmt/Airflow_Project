@@ -1,0 +1,54 @@
+[2023-09-19 09:20:13,521] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: weather_data_pipeline.select_and_retrain_best_model 2023-09-19T09:18:54.555224+00:00 [queued]>
+[2023-09-19 09:20:13,540] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: weather_data_pipeline.select_and_retrain_best_model 2023-09-19T09:18:54.555224+00:00 [queued]>
+[2023-09-19 09:20:13,540] {taskinstance.py:1087} INFO - 
+--------------------------------------------------------------------------------
+[2023-09-19 09:20:13,540] {taskinstance.py:1088} INFO - Starting attempt 1 of 2
+[2023-09-19 09:20:13,540] {taskinstance.py:1089} INFO - 
+--------------------------------------------------------------------------------
+[2023-09-19 09:20:13,564] {taskinstance.py:1107} INFO - Executing <Task(PythonOperator): select_and_retrain_best_model> on 2023-09-19T09:18:54.555224+00:00
+[2023-09-19 09:20:13,573] {standard_task_runner.py:52} INFO - Started process 2282 to run task
+[2023-09-19 09:20:13,580] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'weather_data_pipeline', 'select_and_retrain_best_model', '2023-09-19T09:18:54.555224+00:00', '--job-id', '656', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/weather_data_pipeline.py', '--cfg-path', '/tmp/tmp6vc2sg2p', '--error-file', '/tmp/tmpuduyxilp']
+[2023-09-19 09:20:13,581] {standard_task_runner.py:77} INFO - Job 656: Subtask select_and_retrain_best_model
+[2023-09-19 09:20:13,645] {logging_mixin.py:104} INFO - Running <TaskInstance: weather_data_pipeline.select_and_retrain_best_model 2023-09-19T09:18:54.555224+00:00 [running]> on host 92beb7708765
+[2023-09-19 09:20:13,742] {taskinstance.py:1302} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=weather_data_pipeline
+AIRFLOW_CTX_TASK_ID=select_and_retrain_best_model
+AIRFLOW_CTX_EXECUTION_DATE=2023-09-19T09:18:54.555224+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-09-19T09:18:54.555224+00:00
+[2023-09-19 09:20:13,838] {logging_mixin.py:104} WARNING - /home/***/.local/lib/python3.6/site-packages/pandas/core/indexing.py:1596 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2023-09-19 09:20:13,842] {logging_mixin.py:104} WARNING - /home/***/.local/lib/python3.6/site-packages/pandas/core/indexing.py:1743 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2023-09-19 09:20:13,884] {logging_mixin.py:104} WARNING - /home/***/.local/lib/python3.6/site-packages/pandas/core/indexing.py:1596 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2023-09-19 09:20:13,888] {logging_mixin.py:104} WARNING - /home/***/.local/lib/python3.6/site-packages/pandas/core/indexing.py:1743 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2023-09-19 09:20:13,926] {logging_mixin.py:104} WARNING - /home/***/.local/lib/python3.6/site-packages/pandas/core/indexing.py:1596 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2023-09-19 09:20:13,930] {logging_mixin.py:104} WARNING - /home/***/.local/lib/python3.6/site-packages/pandas/core/indexing.py:1743 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2023-09-19 09:20:14,425] {logging_mixin.py:104} INFO - RandomForestRegressor() saved at  /app/clean_data/best_model_final.pickle
+[2023-09-19 09:20:14,537] {logging_mixin.py:104} INFO - Retrained and saved the best model: <class 'sklearn.ensemble._forest.RandomForestRegressor'>
+[2023-09-19 09:20:14,538] {python.py:151} INFO - Done. Returned value was: None
+[2023-09-19 09:20:14,556] {taskinstance.py:1211} INFO - Marking task as SUCCESS. dag_id=weather_data_pipeline, task_id=select_and_retrain_best_model, execution_date=20230919T091854, start_date=20230919T092013, end_date=20230919T092014
+[2023-09-19 09:20:14,601] {taskinstance.py:1265} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-09-19 09:20:14,633] {local_task_job.py:151} INFO - Task exited with return code 0
